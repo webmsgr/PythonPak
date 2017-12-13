@@ -43,10 +43,5 @@ def breakpkg(pkg,path):
         base64.decode(open("tmpex\\"+file.split(".")[0]+".b64",'rb'), open(os.path.join(path,file),'wb'))
     shutil.rmtree("tmpex", ignore_errors=True)
     os.remove("tmp.py")
-##try:       
-##    filename = Make(["pyphone.py","appapi.py"],"pypy.pkg")
-##except:
-##    shutil.rmtree("tmp", ignore_errors=True)
-##    filename = "pypy.pkg"
-##breakpkg(filename,".")
+
 
